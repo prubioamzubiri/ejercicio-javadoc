@@ -14,7 +14,13 @@ public class FuncionesADocumentar {
         System.out.println("El arreglo ordenado es: ");
         ordenar(a);
     }
-
+    /**
+     * Calcula la suma de todos los elementos del array dado.
+     * El array no puede ser nulo o vacío.
+     *
+     * @param a el array de enteros a ser sumados
+     * @return la suma de todos los elementos del array
+     */
     public static int suma(int a[]) {
         int suma = 0;
         for (int i = 0; i < a.length; i++)
@@ -22,10 +28,23 @@ public class FuncionesADocumentar {
         return suma;
     }
 
+    /**
+     * Calcula el promedio de los elementos de un array de enteros.
+     * El array no puede ser nulo o vacío.
+     *
+     * @param a Array de enteros para calcular el promedio.
+     * @return El promedio de los elementos del array.
+     */
     public static double promedio(int a[]) {
         return suma(a) / a.length;
     }
 
+    /**
+     * Devuelve el mayor elemento de un array de enteros.
+     * El array no puede ser nulo o vacío.
+     * @param a Array de enteros del cual se desea obtener el mayor elemento.
+     * @return El mayor elemento del array.
+     */
     public static int mayor(int a[]) {
         int mayor = a[0];
         for (int i = 1; i < a.length; i++)
@@ -33,7 +52,12 @@ public class FuncionesADocumentar {
                 mayor = a[i];
         return mayor;
     }
-
+    /**
+     * Devuelve el menor elemento de un array de enteros.
+     * El array no puede ser nulo o vacío.
+     * @param a Array de enteros del cual se desea obtener el menor elemento.
+     * @return El menor elemento del array.
+     */
     public static int menor(int a[]) {
         int menor = a[0];
         for (int i = 1; i < a.length; i++)
@@ -42,12 +66,23 @@ public class FuncionesADocumentar {
         return menor;
     }
 
+    /**
+     * Imprime el array de enteros en orden inverso.
+     * El array no puede ser nulo o vacío.
+     * @param a Array de enteros a imprimir en orden inverso.
+     */
     public static void invertir(int a[]) {
         for (int i = a.length - 1; i >= 0; i--)
             System.out.print(a[i] + " ");
         System.out.println();
     }
 
+    /**
+     * Ordena el array de enteros en orden ascendente y lo imprime.
+     * El array no puede ser nulo o vacío.
+     *
+     * @param a Array de enteros a ordenar.
+     */
     public static void ordenar(int a[]) {
         int aux;
         for (int i = 0; i < a.length - 1; i++)
